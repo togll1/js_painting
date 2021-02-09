@@ -7,12 +7,21 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
+h1 {
+    align-items: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+ }
+
 .canvas{
-    width : 800px;
-    height:  700px;
+    width : 500px;
+    height:  500px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px gray;
@@ -20,6 +29,34 @@ body{
 
 .controls { 
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls .controls_btn{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.controls_btn button {
+    all: unset;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px gray;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.8);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.controls_btn button:active{
+    transform: scale(0.98);
 }
 
 .controls .controls_colors{
@@ -32,4 +69,8 @@ body{
     border-radius: 25px;
     box-shadow: 2px 5px gray;
     cursor: pointer;
+}
+
+.controls_ .controls_Range {
+    margin-bottom: 30px;
 }

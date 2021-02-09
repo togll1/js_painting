@@ -8,12 +8,16 @@
 
 </head>
 <body>
+    <h1>JS-PAINTING</h1>
     <canvas id="jsCanvas" class="canvas" ></canvas>
     <div class="controls">
+        <div class="controls_range">
+            <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1" />
+        </div>
         <div class="controls_btn">
             <button id="jsMode">Fill</button>
             <button id="jsSave">Save</button>
-    </div>
+        </div>
             <div class="controls_colors" id="jsColors">
                 <div class="controls_color" style="background-color: black;"></div>
                 <div class="controls_color"  style="background-color: red;"></div>
